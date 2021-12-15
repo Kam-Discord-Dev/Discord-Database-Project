@@ -1,5 +1,5 @@
-/* Made by Kam#4599 on Discord*/
-/* GitHub Repository made on 12/15/2021*/
+/* Made by Kam#4599 on Discord */
+/* GitHub Repository made on 12/15/2021 */
 /* Coded on 12/15/2021 */
 
 const discord = require("discord.js");
