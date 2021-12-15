@@ -1,6 +1,7 @@
 /* Made by Kam#4599 on Discord */
 /* GitHub Repository made on 12/15/2021 */
 /* Coded on 12/15/2021 */
+/* if you fork this, you must add your token to config.json and env. You must also install all packages needed for this code */
 
 const discord = require("discord.js");
 let { bot, client } = new Discord.Client();
