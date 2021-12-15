@@ -3,8 +3,8 @@
 /* Coded on 12/15/2021 */
 /* if you fork this, you must add your token to config.json and env. You must also install all packages needed for this code */
 
-const discord = require("discord.js");
-let { bot, client } = new Discord.Client();
+const Discord = require("discord.js");
+let client = new Discord.Client();
 
 const Database = require("@replit/database");
 let db = new Database();
