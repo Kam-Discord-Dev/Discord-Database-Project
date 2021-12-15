@@ -1,0 +1,5 @@
+{
+  "prefix": "/",
+  "tags": ["login", "signup" /*any of your bot's commands*/],
+  "token": "your bot token"||process.env.token
+}
