@@ -1,3 +1,7 @@
+/* Made by Kam#4599 on Discord*/
+/* GitHub Repository made on 12/15/2021*/
+/* Coded on 12/15/2021 */
+
 const Database = require("@replit/database");
 const db = new Database();
 const Discord = require("discord.js")
