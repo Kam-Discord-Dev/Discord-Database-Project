@@ -19,7 +19,7 @@ client.on("ready", async () => {
 })
 
 client.on("message", async (message) => {
- if(message.content.startsWith(prefix+tags) {
+ if(message.content.startsWith(prefix+tags)) {
 
 let member = message.author;
 var id;
