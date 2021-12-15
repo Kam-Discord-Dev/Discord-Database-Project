@@ -2,11 +2,11 @@
 
 Hi, Welcome to my Discord.js Database project. I'm testing the Replit Database to make a simple first time login and one-time code system, simple Discord leveling system, and a first time welcome message for any command. (Not on Server join. When someone uses a bot command for the first time)
 
-- GitHub link: 
+- GitHub link: https://github.com/Kam-Discord-Dev/Discord-Database-Project
 
 # Simple Example Flowchart 
 
-![db flowchart](./flow.png)
+Person joins server 🠒 REPL makes new Database for that person 🠒 Person uses bot command 🠒 Bot sends them 1 time code 🠒 They sign in 🠒 REPL makes a new Database 🠒 Person types message 🠒 Database adds 100 to it 🠒 Person types 10 messages 🠒 Database goes to 100 and resets
 
 # DB code example
 
