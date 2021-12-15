@@ -15,8 +15,6 @@ let token = require("./config.json")||process.env.token;
 
 client.on("ready", async () => {
  console.log(`${client.user.tag} is Running!`);
- console.log(`Prefix: ${prefix}`);
- console.log(`Token: ${token}`); /* 🠐 You may remove this for bot security reasons 🠐 */
 })
 
 client.on("message", async (message) => {
