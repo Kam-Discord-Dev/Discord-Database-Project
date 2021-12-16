@@ -36,8 +36,7 @@ module.exports = {
    .setTimestamp()
 
    if(!member.id >= collection) return
-   member.send(embed).then(() => {
-   await member.send(`This is your OAuth2 Code, ${oauth}. Copy and paste the code and send it to me when you login`)
+   member.send(embed)
    })
     
    /* db.set(`collection_${member.id}`, collection + message.author.id); */
