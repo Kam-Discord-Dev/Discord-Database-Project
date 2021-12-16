@@ -9,12 +9,14 @@ let client = new Discord.Client();
 const Database = require("@replit/database");
 let db = new Database();
 
-let prefix = require("./config.json");
-let tags = require("./config.json");
-let token = require("./config.json")||process.env.token;
+let { prefix } = require("./config.json");
+let { tags }  = require("./config.json");
+let { token } = require("./config.json")||process.env.token;
 
 client.on("ready", async () => {
  console.log(`${client.user.tag} is Running!`);
+ console.log(`Prefix: `+prefix);
+ console.log(`Token: `+token);
 })
 
 client.on("message", async (message) => {
