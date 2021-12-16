@@ -1,8 +1,10 @@
-# Simple Discord.js Database Project
+# Super Epic Amazingly (is that even a word?) Cool Discord Project
 
 Hi, Welcome to my Discord.js Database project. I'm testing the Replit Database to make a simple first time login and one-time code system, simple Discord leveling system, and a first time welcome message for any command. (Not on Server join. When someone uses a bot command for the first time)
 
 - GitHub link: https://github.com/Kam-Discord-Dev/Discord-Database-Project
+- **READ THE LICENCE**
+- (if u wanna see the handler go to another file not frinkin readme.md)
 
 # Simple Example Flowchart 
 
