@@ -13,7 +13,7 @@ let { tags }  = require("./config.json");
 let { token } = require("./config.json")||process.env.token;
 
 module.exports = {
-  name: tags,
+  name: `${tags}`,
   aliases: ["@execute/test"],
   description: "Super simple execute comamnd for 1 time users",
   execute: async (client, message, msg, args) => {
