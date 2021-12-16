@@ -25,10 +25,19 @@ module.exports = {
    id = message.author.username;
    var oauth = Math.floor(Math.random() * 100000) + 1;
    let collection = await db.get(`collection_id`);
+    
+   let embed = new Discord.MessageEmbed()
+   .setTitle("Hello User!")
+   .setDescription("I see that you are not currently signed up in my servers.\nFollow my steps and I can help you get started!")
+   .addField("Step 1", "First use the command \`${prefix}login\`.")
+   .addField("Step 2", "Next follow the login instructions.")
+   .addField("Step 3", "Your done! You can now use my bot commands.")
+   .setFooter("")
+   .setTimestamp()
 
    if(!member.id >= collection) return
    member.send(embed).then(() => {
-      member.send(`This is your OAuth2 Code, ${oauth}. Copy and paste the code and send it to me when you login`)
+   await member.send(`This is your OAuth2 Code, ${oauth}. Copy and paste the code and send it to me when you login`)
    })
     
    /* db.set(`collection_${member.id}`, collection + message.author.id); */
