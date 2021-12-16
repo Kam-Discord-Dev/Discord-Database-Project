@@ -8,7 +8,7 @@ const Discord = require("discord.js");
 let client = new Discord.Client();
 let util = require("djs-simple-utils"); /* My package btw */
 let superEmbed = require("djs-simple-utils");
-const { messageEmbed, Collection } = require("discord.js");
+const { MessageEmbed, Collection } = require("discord.js");
 const fs = require("fs");
 const axios = require("axios");
 
@@ -41,6 +41,8 @@ client.on("message", async (message) => {
 
 let member = message.author;
 var id;
+id = message.author.id;
+var username;
 id = message.author.username;
 
 let collection = await db.get(`collection_id`);
