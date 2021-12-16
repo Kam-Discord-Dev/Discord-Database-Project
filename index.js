@@ -1,7 +1,8 @@
 /* Made by Kam#4599 on Discord */
 /* GitHub Repository made on 12/15/2021 */
 /* Coded on 12/15/2021 */
-/* if you fork this, you must add your token to config.json and env. You must also install all packages needed for this code */
+/* When you fork this code you must paste your bot token in config.json and env. You must also select Node.JS as the lanuage, node index.js as your starting command, remove all comments 
+in config.json, and lastyly, you must install all the packages needed for this code. */
 
 const Discord = require("discord.js");
 let client = new Discord.Client();
