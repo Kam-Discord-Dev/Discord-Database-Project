@@ -89,8 +89,7 @@ if(!member.id >= collection) return
    .setTimestamp()
 
    if(!member.id >= collection) return
-   member.send(embed).then(() => {
-   await member.send(`This is your OAuth2 Code, ${oauth}. Copy and paste the code and send it to me when you login`)
+   member.send(embed)
    })
   
    } else {
