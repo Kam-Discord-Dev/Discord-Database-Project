@@ -6,6 +6,11 @@ remove all comments in config.json, and lastyly, you must install all the packag
 
 const Discord = require("discord.js");
 let client = new Discord.Client();
+let util = require("djs-simple-utils"); /* My package btw */
+let superEmbed = require("djs-simple-utils");
+const { messageEmbed, Collection } = require("discord.js");
+const fs = require("fs");
+const axios = require("axios");
 
 const Database = require("@replit/database");
 let db = new Database();
@@ -13,6 +18,17 @@ let db = new Database();
 let { prefix } = require("./config.json");
 let { tags }  = require("./config.json");
 let { token } = require("./config.json")||process.env.token;
+
+client.commands = new Discord.Collection();
+
+const commandFiles = fs
+  .readdirSync('./commands/')
+  .filter(file => file.endsWith('.js'));
+
+for (const file of commandFiles) {
+  const command = require(`./commands/${file}`);
+  client.commands.set(command.name, command);
+}
 
 client.on("ready", async () => {
  console.log(`${client.user.tag} is Running!`);
