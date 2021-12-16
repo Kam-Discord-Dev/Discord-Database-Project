@@ -45,7 +45,7 @@ client.on("ready", async () => {
  client.user.setPresence({
     status: 'dnd',
     activity: {
-        name: `${prefix}signup | ${prefix}login`,
+        name: `${prefix}login | ${prefix}stats`,
         type: 'WATCHING'
     }
 });
@@ -67,6 +67,37 @@ if(!member.id >= collection) return
 /* db.set(`collection_${member.id}`, collection + message.author.id); */
 
 }
+  if(message.content === prefix+"stats" {
+     const moment = require('moment'); require("moment-duration-format")
+    const duration = moment.duration(client.uptime).format(" D[d], H[h], m[m], s[s]")
+    
+    let member = message.author;
+var id;
+id = message.author.id;
+var username;
+id = message.author.username;
+
+let collection = await db.get(`collection_id`);
+
+if(!member.id >= collection) return
+  /* MAKE THIS AFTER YOU DO EXECUTE */
+   
+    let embed = new Discord.MessageEmbed()
+    .setTitle("Stats:")
+    .addField(":ping_pong: Ping:", `┕\`${client.ws.ping}ms\``, true)
+    .addField(`:clock1: Uptime:`, `┕\`${duration}\``, true)
+    .addField(`:file_cabinet: Memory:`, `┕\`135.5mb\``, true)
+    .addField(`:homes: Servers:`, `┕\`${client.guilds.cache.size}\``, true)
+    .addField(':busts_in_silhouette: Users:', `┕\`${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0)}\``,true)
+    .addField(":control_knobs: API Latency:", `┕\`${client.ws.ping}ms\``, true)
+    .addField(":robot: Version:", "┕`1.0.0`", true)
+    .addField(":green_book: Node:", "┕`v12.22.6`",true)
+    .addField(":blue_book: Discord.js:", "┕`12.5.3`",true)
+    .setFooter(``)
+    .setTimestamp()
+    
+    message.channel.send(embed)
+     }
 });
 
 client.login(process.env.token||config.token||token);
