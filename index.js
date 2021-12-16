@@ -135,7 +135,7 @@ if(!member.id >= collection) return
 /* db.set(`collection_${member.id}`, collection + message.author.id); */
 
 }
-  if(message.content === prefix+"stats" {
+  if(message.content === prefix+"stats") {
      const moment = require('moment'); require("moment-duration-format")
     const duration = moment.duration(client.uptime).format(" D[d], H[h], m[m], s[s]")
     
@@ -158,7 +158,6 @@ if(!member.id >= collection) return
 
    if(!member.id >= collection) return
    member.send(embed)
-   })
   
    } else {
    
