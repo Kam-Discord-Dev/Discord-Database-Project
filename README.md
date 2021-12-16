@@ -8,7 +8,7 @@ Hi, Welcome to my Discord.js Database project. I'm testing the Replit Database t
 
 Person joins server 🠒 REPL makes new Database for that person 🠒 Person uses bot command 🠒 Bot sends them 1 time code 🠒 They sign in 🠒 REPL makes a new Database 🠒 Person types message 🠒 Database adds 100 to it 🠒 Person types 10 messages 🠒 Database goes to 1000 and resets 🠒 Person types 20 messages 🠒 Database goes to 2k and resets (every level up is +1000 for the database)
 
-# DB code example
+# Database code example
 
 ```node.js
 const Database = require("@replit/database");
@@ -33,6 +33,10 @@ await db.set(`collection_${member.id}`, collection + message.author.id)
 
 /* 🠑 Small disclaimer, The code above will not work by its self. It will need many updates to work with all the other commands. 🠑 */
 ```
+
+# Forking
+
+If/when you fork this code you must paste your bot token in config.json and env. You must also select Node.JS as the lanuage and node index.js as your starting command. and ALSO go to config.json and remove the comments in it. They look like this; /* and have words in them. */
 
 # Licence
 
