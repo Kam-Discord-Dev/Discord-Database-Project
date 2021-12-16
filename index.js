@@ -34,7 +34,15 @@ client.on("ready", async () => {
  console.log(`${client.user.tag} is Running!`);
  console.log(`Prefix: `+prefix);
  console.log(`Token: `+token);
-})
+ /* client.user.setActivity(`${prefix}login | ${prefix}signup`,  { type: 'WATCHING' }, { status: 'dnd' }); */
+ client.user.setPresence({
+    status: 'dnd',
+    activity: {
+        name: `${prefix}signup } ${prefix}login`,
+        type: 'WATCHING'
+    }
+});
+});
 
 client.on("message", async (message) => {
  if(message.content.startsWith(prefix+tags)) {
