@@ -31,12 +31,13 @@ if(!member.id >= collection) return
 await db.set(`collection_${member.id}`, collection + message.author.id)
 })
 
-/* 🠑 Small disclaimer, The code above will not work by its self. It will need many updates to work with all the other commands. 🠑 */
+/* 🠑 Small disclaimer, The code above will not work by its self. It will need many updates to work with all 
+the other commands. 🠑 */
 ```
 
 # Forking
 
-If/when you fork this code you must paste your bot token in config.json and env. You must also select Node.JS as the lanuage and node index.js as your starting command. and ALSO go to config.json and remove the comments in it. They look like this; /* and have words in them. */
+If/when you fork this code you must paste your bot token in config.json and env. You must also select Node.JS as the lanuage, node index.js as your starting command, remove all comments in config.json, and lastyly, you must install all the packages needed for this code. Comments look like this; /* and have words in them. */ 
 
 # Licence
 
