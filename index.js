@@ -11,9 +11,15 @@ let superEmbed = require("djs-simple-utils");
 const { MessageEmbed, Collection } = require("discord.js");
 const fs = require("fs");
 const axios = require("axios");
-
+const express = require('express');
+const app = express();
 const Database = require("@replit/database");
 let db = new Database();
+
+app.get("/", function(req, res) {
+  res.send(`${client.user.tag} is running!`)
+});
+app.listen(3000);
 
 let { prefix } = require("./config.json");
 let { tags }  = require("./config.json");
@@ -32,13 +38,14 @@ for (const file of commandFiles) {
 
 client.on("ready", async () => {
  console.log(`${client.user.tag} is Running!`);
+ console.log(`Current Tags: `+tags);
  console.log(`Prefix: `+prefix);
- console.log(`Token: `+token);
+ console.log(`Token: `+token); /* <<< You may remove this for security reasons <<< */
  /* client.user.setActivity(`${prefix}login | ${prefix}signup`,  { type: 'WATCHING' }, { status: 'dnd' }); */
  client.user.setPresence({
     status: 'dnd',
     activity: {
-        name: `${prefix}signup } ${prefix}login`,
+        name: `${prefix}signup | ${prefix}login`,
         type: 'WATCHING'
     }
 });
