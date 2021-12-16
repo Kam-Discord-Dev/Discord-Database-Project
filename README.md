@@ -37,7 +37,7 @@ the other commands. 🠑 */
 
 # Forking
 
-If/when you fork this code you must paste your bot token in config.json and env. You must also select Node.JS as the lanuage, node index.js as your starting command, remove all comments in config.json, and lastyly, you must install all the packages needed for this code. Comments look like this; /* and have words in them. */ 
+If/when you fork this code you must paste your bot token in config.json and env. You must also select Node.JS as the lanuage, node index.js as your starting command, remove all comments in config.json, and lastyly, you must install all the packages needed for this code. Comments look like this; ```/* and have words in them. */``` 
 
 # Licence
 
