@@ -6,7 +6,7 @@ Hi, Welcome to my Discord.js Database project. I'm testing the Replit Database t
 
 # Simple Example Flowchart 
 
-Person joins server 🠒 REPL makes new Database for that person 🠒 Person uses bot command 🠒 Bot sends them 1 time code 🠒 They sign in 🠒 REPL makes a new Database 🠒 Person types message 🠒 Database adds 100 to it 🠒 Person types 10 messages 🠒 Database goes to 100 and resets
+Person joins server 🠒 REPL makes new Database for that person 🠒 Person uses bot command 🠒 Bot sends them 1 time code 🠒 They sign in 🠒 REPL makes a new Database 🠒 Person types message 🠒 Database adds 100 to it 🠒 Person types 10 messages 🠒 Database goes to 1000 and resets 🠒 Person types 20 messages 🠒 Database goes to 2k and resets (every level up is +1000 for the database)
 
 # DB code example
 
