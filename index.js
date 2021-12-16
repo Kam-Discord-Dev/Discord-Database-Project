@@ -71,16 +71,29 @@ if(!member.id >= collection) return
      const moment = require('moment'); require("moment-duration-format")
     const duration = moment.duration(client.uptime).format(" D[d], H[h], m[m], s[s]")
     
-    let member = message.author;
-var id;
-id = message.author.id;
-var username;
-id = message.author.username;
+   let member = message.author;
+   var id;
+   var username;
+   id = message.author.id;
+   id = message.author.username;
+   var oauth = Math.floor(Math.random() * 100000) + 1;
+   let collection = await db.get(`collection_id`);
 
-let collection = await db.get(`collection_id`);
+   let embed = new Discord.MessageEmbed()
+   .setTitle("Hello User!")
+   .setDescription("I see that you are not currently signed up in my servers.\nFollow my steps and I can help you get started!")
+   .addField("Step 1", "First use the command \`${prefix}login\`.")
+   .addField("Step 2", "Next follow the login instructions.")
+   .addField("Step 3", "Your done! You can now use my bot commands.")
+   .setFooter("")
+   .setTimestamp()
 
-if(!member.id >= collection) return
-  /* MAKE THIS AFTER YOU DO EXECUTE */
+   if(!member.id >= collection) return
+   member.send(embed).then(() => {
+   await member.send(`This is your OAuth2 Code, ${oauth}. Copy and paste the code and send it to me when you login`)
+   })
+  
+   } else {
    
     let embed = new Discord.MessageEmbed()
     .setTitle("Stats:")
