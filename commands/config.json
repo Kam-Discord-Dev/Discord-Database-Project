@@ -1,0 +1,5 @@
+{
+  "prefix": "/",
+  "tags": ["login", "stats"],
+  "token": "your bot token"
+}
