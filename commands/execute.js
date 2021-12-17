@@ -37,7 +37,6 @@ module.exports = {
 
    if(!member.id !== collection) return
    member.send(embed)
-   })
     
    /* db.set(`collection_${member.id}`, collection + message.author.id); */
     
