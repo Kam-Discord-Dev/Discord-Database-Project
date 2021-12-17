@@ -179,4 +179,4 @@ if(!member.id !== collection) return
      }
 });
 
-client.login(process.env.token||config.token||token);
+client.login(process.env.token||token);
