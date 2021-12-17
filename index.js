@@ -15,7 +15,7 @@ const Database = require("@replit/database");
 let db = new Database();
 
 app.get("/", function(req, res) {
-  res.send(`${client.user.tag} is running!`)
+  res.send(`Bot is running!`)
 });
 app.listen(3000);
 
