@@ -1,5 +1,5 @@
-const Discord = require("discord.js");
-let client = new Discord.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION'] }); 
 let util = require("djs-simple-utils"); /* My package btw */
 let superEmbed = require("djs-simple-utils");
 const { MessageEmbed, Collection } = require("discord.js");
@@ -26,12 +26,33 @@ module.exports = {
    var oauth = Math.floor(Math.random() * 100000) + 1;
    let collection = await db.get(`collection_id`);
     
-    let embed= new Discord.MessageEmbed()
+     let embed= new Discord.MessageEmbed()
     .setTitle("User Login")
+    .setDesription("This is your OAuth2 code. Don't loose it.")
+    .addField("OAuth2 Code:", `\`${oauth}\``)
+    .setFooter("React to this message to start the verification process.")
+    .then((m) => {
+      m.react("✅")
+    })
+     
+   member.send(embed)
     
-   member.send(embed).then(() => {
-     member.send(`This is your OAuth2 Code. Please send it to me when you are told to.`)
-   });
+    client.on('messageReactionAdd', async (reaction, user) => {
+    if (reaction.partial) {
+        try {
+            await reaction.fetch();
+        } catch (error) {
+            console.error('Fetching message failed: ', error);
+            return;
+        }
+    }
+    if (!user.bot) {
+    member.send(embed2)
+        } else {
+          member.send(":x: | \`Sorry, but i'm having trouble processing your request. Please try again later.\`")
+        }
+    }
+})
    
   }
 }
