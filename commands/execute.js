@@ -7,6 +7,8 @@ const axios = require("axios");
 const Database = require("@replit/database");
 let db = new Database();
 
+const tags = require("./config.json")
+
 module.exports = {
   name: `${tags}`,
   aliases: ["@execute/test"],
