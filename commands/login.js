@@ -10,7 +10,7 @@ let db = new Database();
 module.exports = {
   name: "login",
   aliases: ["l"],
-  description: `Simple login command for ${client.user.tag}`,
+  description: `Simple login command for bot`,
   execute: async (client, message) => {
     
    let member = message.author;
