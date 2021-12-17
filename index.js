@@ -130,7 +130,7 @@ id = message.author.username;
 
 let collection = await db.get(`collection_id`);
 
-if(!member.id >= collection) return
+if(!member.id !== collection) return
 
 /* db.set(`collection_${member.id}`, collection + message.author.id); */
 
@@ -156,7 +156,7 @@ if(!member.id >= collection) return
    .setFooter("")
    .setTimestamp()
 
-   if(!member.id >= collection) return
+   if(!member.id !== collection) return
    member.send(embed)
   
    } else {
