@@ -59,7 +59,7 @@ module.exports = {
      member.send("📜 | **Step 2:** \`What is your name and/or nickname\`")
        client.on("message", async (msg) => {
          if(args[0] === oauth) return false;
-         if(args[0] >= oauth) return member.send(`Hello, ${args[0]}`)
+         if(args[0] !== oauth) return member.send(`Hello, ${args[0]}`)
          .then((m1) => {
            member.send("✅ | \`Login is complete. You may close this DM\`")
            .then(() => {
