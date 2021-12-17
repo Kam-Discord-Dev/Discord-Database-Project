@@ -35,7 +35,7 @@ module.exports = {
    .setFooter("")
    .setTimestamp()
 
-   if(!member.id >= collection) return
+   if(!member.id !== collection) return
    member.send(embed)
    })
     
