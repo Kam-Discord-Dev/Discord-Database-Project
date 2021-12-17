@@ -2,7 +2,7 @@
 /* GitHub Repository made on 12/15/2021 */
 /* Started code on 12/15/2021 */
 /* When you fork this code you must paste your bot token in config.json and env. You must also select Node.JS as the lanuage, node index.js as your starting command, 
-remove all comments in config.json, and lastyly, you must install all the packages needed for this code.  (This message is a comment btw) */
+remove all comments in config.json, and lastly, you must install all the packages needed for this code.  (This message is a comment btw) */
 
 const Discord = require("discord.js");
 let client = new Discord.Client();
