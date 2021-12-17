@@ -1,7 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"] }); 
-let util = require("djs-simple-utils"); /* My package btw */
-let superEmbed = require("djs-simple-utils");
 const { MessageEmbed, Collection } = require("discord.js");
 const fs = require("fs");
 const axios = require("axios");
