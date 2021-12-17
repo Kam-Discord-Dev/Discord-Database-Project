@@ -19,7 +19,7 @@ await console.log(`Collection DB Running`)
 
 let collection = await db.get(`collection_id`);
 
-if(!member.id >= collection) return
+if(!member.id !== collection) return
 
 var count
 count = 5
