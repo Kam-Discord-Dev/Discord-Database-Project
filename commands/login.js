@@ -51,7 +51,6 @@ module.exports = {
         } else {
           member.send(":x: | \`Sorry, but i'm having trouble processing your request. Please try again later.\`")
         }
-    }
 })
    
   }
