@@ -1,5 +1,5 @@
 {
   "prefix": "/",
-  "tags": ["login", "stats"],
+  "tags": ["login", "stats", /* all of your bot's commands (delete this message after your read it please) */],
   "token": "your bot token"
 }
